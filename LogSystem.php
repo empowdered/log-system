@@ -16,8 +16,7 @@ class LogSystem {
     public string $dateLocal;
 
     function __construct() {
-        ;
-        ;
+        ;;
         $this->setConfig();
     }
 
@@ -60,11 +59,8 @@ class LogSystem {
 
     /**
      * Tipo de parametro y return para generateRandomString
-     *
      * @param int
-     *
      * @return string
-
      */
     function generateRandomString($length = 10) {
         $x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -72,56 +68,66 @@ class LogSystem {
     }
 
     /**
-
      * Tipo de return para getNameLog
-
      * @return string
-
      */
     public function getNameLog(): string {
         return $this->$nameLog;
     }
 
     /**
-
      * Tipo de return para getDate
-
      * @return string
-
      */
     public function getDate(): string {
         return $this->date;
     }
 
     /**
-
      * Tipo de return para getPath2Log
-
      * @return string
-
      */
     public function getPath2Log(): string {
         return $this->path2Log;
     }
-
+    
+    /**
+     * Tipo de parametro para setNameLog
+     * @param string
+     */
     public function setNameLog(string $nameLog): void {
         $this->$nameLog = $nameLog;
     }
 
+     /**
+     * Tipo de parametro para setDate
+     * @param string
+     */
     public function setDate(string $date): void {
         $this->date = $date;
     }
 
+    /**
+     * Tipo de parametro para setPath2Log
+     * @param string
+     */
     public function setPath2Log(string $path2Log): void {
         $this->path2Log = $path2Log;
     }
 
+    /**
+     * Tipo de return para setPath2Log
+    * @return string
+    */
     public function getIdTrx(): string {
         return $this->$idTrx;
     }
 
+   /**
+    * Tipo de parametro para setIdTrx
+    * @param string
+    */
     public function setIdTrx(string $idTrx): void {
         $this->id_trx = $idTrx;
     }
-
 }
