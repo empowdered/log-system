@@ -1,33 +1,19 @@
 
-# Foobar
+# LogSystem Class
 
-Foobar is a Python library for dealing with word pluralization.
+LogSystem Class is a little script based from PHP OOP.
 
-## Installation
+## How i use it?
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+first configuration is:
+    -Edit the file conf.inc.php with correct values for:
+        1-date_default_timezone_set
+        2-$PROJECT_NAME variable
 
-```bash
-pip install foobar
-```
+1-Include into your script php instance use: require_once, require, include or include_once.
+2-Instance the class like: $log = new LogSystem();
+3-Call the method $log->write("message...","name of class or script");
 
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 

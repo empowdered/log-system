@@ -5,7 +5,7 @@
  */
 
 date_default_timezone_set("America/Santiago");
-$NB_PROYECTO = "log-system";
+$PROJECT_NAME = "log-system";
 define("PATH_TO_LOG",$_SERVER['DOCUMENT_ROOT']);
-define("PATH_BASE_PROJECT",$NB_PROYECTO);
+define("PATH_BASE_PROJECT",$PROJECT_NAME);
 define("DEFAULT_TIME_ZONE", date_default_timezone_get());
